@@ -111,6 +111,12 @@
                                 <span>Agenda</span></a></li>
                         @endcan
 
+                        @can('pkbm.index')
+                        <li class="{{ setActive('admin/pkbm') }}"><a class="nav-link"
+                                href="{{ route('admin.pkbm.index') }}"><i class="fas fa-bell"></i>
+                                <span>PKBM</span></a></li>
+                        @endcan
+
                         @if(auth()->user()->can('photos.index') || auth()->user()->can('videos.index'))
                         <li class="menu-header">GALERI</li>
                         @endif
