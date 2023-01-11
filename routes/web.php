@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [App\Http\Controllers\User\HomeController::class, 'index']);
 Route::get('/login', [App\Http\Controllers\Auth\LoginController::class, 'ShowLoginForm']);
 Route::get('/berita', [App\Http\Controllers\User\BeritaController::class, 'index']);
+Route::get('/berita/{slug}', [App\Http\Controllers\User\BeritaController::class, 'detail']);
 
 Auth::routes(['register' => false]);
 

@@ -12,6 +12,15 @@ class BeritaController extends Controller
     {
         $x = [];
         $x['data'] = Post::get();
+        // return $x;
         return view('user.berita.all', $x);
+    }
+
+    public function detail($slug)
+    {
+        $x = [];
+        $x['data'] = Post::where('slug', $slug)->first();
+        // return $x;
+        return view('user.berita.detail', $x);
     }
 }

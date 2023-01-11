@@ -30,7 +30,7 @@
             <div class="layout-px-spacing">
                 <div class="row layout-top-spacing">
                     @yield('content')
-                    <div class="footer-wrapper p-1" style="background-color:#0044ff; display: inline;">
+                    <div class="footer-wrapper p-1 mt-2" style="background-color:#0044ff; display: inline;">
                         <div class="footer-section">
                             <div class="row">
                                 <div class="col-lg-3">
